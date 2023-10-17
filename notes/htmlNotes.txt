@@ -1,0 +1,27 @@
+Emmet: HTML add-on software that lets you use powerful HTML shortcuts that speed up development time
+
+    Useful Commands:
+    ! : boilerplate
+    alt + w: Wrapping, allows you to create parent elemnts are the currently selected element.
+    alt + r: Remove: remove the currently selected element.
+
+    Creation syntax:
+    Can create html elements quickly with combinations of element names, CSS class/id syntax, and > () to nest elements
+        e.g. div>p1>button.THEBUTTON
+        creates
+        <div>
+            <p1>
+                <button class = "THEBUTTON"><button>
+            <p1>
+        <div>
+        but takes significantly less time to write.
+    Parenthesis can be used in the same way as PEMDAS to isolate parts of Emmet input
+        e.g. head+(body>p1)+footer would create
+        <head><head>
+        <body>
+            <p1><p1>
+        <body>
+        <footer><footer>
+
+
+
