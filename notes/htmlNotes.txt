@@ -25,3 +25,19 @@ Emmet: HTML add-on software that lets you use powerful HTML shortcuts that speed
 
 
 
+SVG: "Scalable Vector Graphics"
+    a form of image that is made of mathmatical equations, as opposed to specified colored pixels. This allows images to be enlarged without
+    reducing image quality. The downside of this process it that it rapidly becomes unwieldy with complicated images, making it more useful for
+    things like business logos where there is not a high number of details.
+
+    SVG's can be placed in a website with two different methods, linking and embedding
+        linked SVG's are cleaner, but can't be accessed from your website, meaning that they cannot be altered.
+        embedded SVG's are more work and can clutter your code, but allow you access to the image, meaning it can be altered with XML
+
+XML: "Extensible Markup Language"
+    SVG is written in XML as opposed to binary. This language can be interacted with and altered in order to alter the image.
+    svg xmlns: "XML NameSpace" specifies the dialect of XML being used, some browsers need this to properly load the image.
+    viewBox: Defines the bounds of your image
+    class, id: functions the exact same as it does in HTML and CSS
+    base elements: <circle>, <rect>, <path>, and <text> are the basic building blocks of SVG
+    SVG attributes: such as <fill> and <stroke> can be altered with CSS
