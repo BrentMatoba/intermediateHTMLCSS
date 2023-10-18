@@ -1,0 +1,9 @@
+Default Styles and Resets:
+Browser each their own unique minimal styling that is applied to any HTML. For example, links in chrome are blue if no css is appliied!
+These default styles are relatively small but CAN create small problems, interefering with your CSS.
+To counter this, web developers often use a "reset" to cancel out the browser's default styles and start with a truly neutral HTML, allowing for websites to
+perform more consistently across different browsers.
+This isn't always used, since the default styling is usually there for good reason, and the programmer will have to manually recreate
+a lot of the default styling later anyways.
+There are various reset methods with different degrees of changes, but the Meyers reset is by far the most common method.
+

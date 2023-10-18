@@ -41,3 +41,32 @@ XML: "Extensible Markup Language"
     class, id: functions the exact same as it does in HTML and CSS
     base elements: <circle>, <rect>, <path>, and <text> are the basic building blocks of SVG
     SVG attributes: such as <fill> and <stroke> can be altered with CSS
+
+
+Tables: HTML Tables allow you to create two-dimensional tables made of rows and columns.
+    sample code:
+    <table>
+        <tr>
+            <th>First Header</th>
+            <th>Second Header</th>
+        </tr>
+        <tr>
+            <td>This is a data cell</td>
+            <td>This is also a data cell!</td>
+        </tr>
+</table>
+
+<table>: Creates the table
+<tr>: Creates the "table row"
+    can change color using bgcolor tag
+<th>: Table Header
+<td>: Creates individual cells
+<colspan>: Changes the size of a cell across a column
+<rowspan>: Changes the size of a cell across a row
+<caption>: Adds notes to sections of the table, particularly useful for non-sighted users
+<thead>,<tbody>,<tfoot>: Used to provide structure for table. Don't visually change anything, but great for non-sighted users
+<scope>: added to <th> elements to note what the column is for.
+can use id's to select elements
+
+
+
