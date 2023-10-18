@@ -7,3 +7,18 @@ This isn't always used, since the default styling is usually there for good reas
 a lot of the default styling later anyways.
 There are various reset methods with different degrees of changes, but the Meyers reset is by far the most common method.
 
+
+
+
+CSS Units: These units describe the actual size of CSS styles. For instance, pixels
+Absolute Units: Pixels (px). There are technically other absolute units such as inches and centimeters, but they don't really make sense in the context of webpages
+and you should really only use pixels.
+
+Relative Units: Units that change their size depending on the context
+    em and rem: both refer to a font-size, as a rule of thumb prefer rem.
+        1 em is the font-size of an eleemnt (or parent element) If the element's parent is 16px, then setting the width to 4em would make the child 64px wide.
+        1 rem is the font-size of the root element. The math works the exact same with em's, but without the added complexity of factoring in the parent's font-size
+
+    viewport units: vh and vw relate to the size o the viewport, meaning it scales with the size of the device.
+    1vh is equal to 1% of the viewport height and 1vw is equal to 1% of the viewport width.
+
