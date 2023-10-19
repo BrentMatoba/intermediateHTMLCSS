@@ -22,3 +22,27 @@ Relative Units: Units that change their size depending on the context
     viewport units: vh and vw relate to the size o the viewport, meaning it scales with the size of the device.
     1vh is equal to 1% of the viewport height and 1vw is equal to 1% of the viewport width.
 
+More Text Styles:
+    custom fonts/text-related CSS properties.
+    system font stack: If the first font is not available within a browser for whatever reason,  the second specified font will be used instead. If there is no specified
+    font, the browser will use the HTML default, which is quite ugly.
+
+    example code: 
+    body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+        *The point of this long string of font names is to account for the base font of every reguarly used Browser. This typically ensures a decent looking font
+        for the user.
+
+    There are font libraries that you can download non-native fonts from, including Google Fonts, and Font Library.
+    example code:
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    alternative @import tag method:
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    
+    It is also possible to use fonts downloaded to your computer.
+
