@@ -52,4 +52,66 @@ Text-Styles:
     html tag.
     letter-spacing: changes space between letters
     line-height: changes the space between each row of text
+    text-transform: Changes the case of a given text. Basically all-caps
+    text-shadow: Adds shadows to letters. Rarely used but can be great for headings and presentational texts.
+    elilipsis: can truncate overflowing text with an ellipsis. TBH I don't know what the means look it up soon.
+
+
+
+
+More CSS Properties: All the CSS properties I'll be using on a regular basis.
+    Background: Shorthand for 8 differnt background-related properties.
+        Can change background colors, images, image placement, can have multiple background layers.
+        Incredibly complicated formal syntax for some reason   
+            *should watch a video on this I don't think the documentation is going to cut it.
+    border:Shorthand for the border property of elements. Can define size, style, color.
+    border-radius: Rounds corners of elements. Possible to do different radiuses for different corners but rarely ever useful, just remember its possible
+    box-shadow: Creates a shadow adding a 3d effect for your page. Its best used sparingly and with a light hand.
+    overflow: defines what happens when an element is larger than the page.
+    Opacity: controls the transparency of an element.
+
+Advanced Selectors: Particularly useful when you can't (or aren't allowed to) modify your HTML. 
+    This is not an extensive list, there are MANY advanced selectors.
+
+    Child and sibling combinators: Used to refer to elements without a referring to their classes.
+    >: THe child combinator
+    +:The adjacent sibling combinator
+    ~: The general sibling combinator
+
+        <main class="parent">
+            <div class="child group1">
+                <div class="grand-child group1"></div>
+             </div>
+         <div class="child group2">
+            <div class="grand-child group2"></div>
+        </div>
+        <div class="child group3">
+            <div class="grand-child group3"></div>
+         </div>
+    </main>
+
+    using .class in CSS would target the parent and ALL children and grandchildren classes.
+    parent > div {
+        #this selector targets ONLY the child classes of the parent div. Does NOT target grandchildren.
+    }
+
+    parent > div > div
+        This selector only targets the grandchildren of the parent div
+
+    .group1 + div {
+        #this only selects the div with the class child group2
+    }
+    .group1 + div + div{
+        #this rule will only select the div with the class child group 3
+    }
+    .group1 ~ div{
+        #selects all of group 1's siblings
+    }
+
+
+
+Pseudo-selectors: 
+    *pseudo elements and pseudo classes are NOT the same thing.
+
+    Pseudo classes:
 
