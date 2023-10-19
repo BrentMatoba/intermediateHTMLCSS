@@ -46,3 +46,10 @@ More Text Styles:
     
     It is also possible to use fonts downloaded to your computer.
 
+
+Text-Styles:
+    font-style: typically used to make a font iatlic. Use if you just want the italic effect, but without semantic emphasis. If you want semantic emphasis, use the <em>
+    html tag.
+    letter-spacing: changes space between letters
+    line-height: changes the space between each row of text
+
