@@ -217,3 +217,50 @@ Positioning
 
     sticky positioning: sticky elements act like normal elements until you scroll past them, then they start behaving like fixed elements.
         use case: section headings.
+
+
+
+CSS functions
+    CSS has functions in the same way as every other programming language. Reuseable code that sometimes takes arguments and performs specific tasks.
+    Notably, CSS does no support custom functions, only allowing users to use CSS' premade functions.
+
+    common functions:
+    calc():
+        use case: mixing units, the ability to nest calc(calc()).
+
+        example code:
+        :root {
+            --header: 3rem;
+            --footer: 40px;
+            --main: calc(100vh - calc(var(--header) + var(--footer)));
+        }
+    
+*note the min() and max() methods are defined very weirdly and counterintuitively
+    min(500px, 50%): checks both input values to find whichever is smallest, then applies that size to the element.
+    max(500px, 50%): checks both input values to find whatever is largest, then applies that size to the element.
+
+clamp(smallest value, ideal value, largest value.)
+    The clamp function uses these values to set the smallest value, ideal value and largest value. In the above example, this would mean the smallest acceptable font-size would be 320px
+    and the largest would be 60 rem. The ideal font-size would be 80 vw.
+        This is used to make elements fluid and responsive.
+
+    neat clamp tricks: https://web.dev/articles/min-max-clamp
+
+
+
+Custom properties: Basicaly variables but with CSS. Defined with --. Note that custom properties are case sensitive --beepboop!=--BeepBoop
+example code:
+    .error-modal {
+    --color-error-text: red;
+    --modal-border: 1px solid black;
+    --modal-font-size: calc(2rem + 5vw);
+
+    color: var(--color-error-text);
+    border: var(--modal-border);
+    font-size: var(--modal-font-size);
+    }
+
+    AFter the custom property is defined, it can be accessed using the var() function. The var() function takes two input variables, the variable you want to insert, and a fallback value.
+    var(input, fallback);
+
+
