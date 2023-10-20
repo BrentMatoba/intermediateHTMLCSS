@@ -274,4 +274,35 @@ example code:
 
 
 Browser Compatibility:
+    Web applications must be tested in all browsers that users are likely to use. For chromium browsers (chrome, Safar, Firefox, a few others.) what works in
+    chrome SHOULD work in all of them. Other less common browsers like Internet Explorer should be tested separately
+
+    Using new CSS and browser features is great and exciting, but there is always the possiblity that not all browsers have installed the new feature yet, and
+    that your website might be altered or dysfunctional for some users and browsers.
+    
+    https://caniuse.com/ 
+    this website shows which browsers have installed which features, and which are safe to use for all browsers.
+    Generally speaking its best practice to only use features that are available on all or most browsers.
+
+    Mobile browsers:
+        Phones are becoming increasingly popular as a way to access the internet, and even represent a majority in parts of the world.
+        There are two main phone operating systems, iOS(also iPadOS), and Android.
+        Note: On iOS and iPadOS, the ONLY browser is Safari. you can "download" other browsers onto iOS, but they are still running the Safari webkit
+        and are virtually reskins of the Safari browers. Therefore, for your website to work for iphones, it MUST be compatible with Safari.
+
+        One of the most important aspects of phones is that there are an unbelievable amount of varying screen sizes. Chrome allows you to emulate phones within a web browser,
+        but note that they are only replicating screen size, and that there may be some limitations of phones that aren't accounted for when usng phone mode in the chrome development tools.
+
+
+Frameworks and Preprocessors
+    Frameworks are prepacked bundles of CSS that serve as a layer of abstraction over coding. Premade styles and elements allow you to build websites faster.
+    there are MANY but the most common are Bootstrap and Tailwind.
+
+    Disadvantages of Frameworks: Frameworks are great! but sometimes people use them as a way to skirt around learning fundamentals. Its like Iron Man telling Spider-Man that if he's nothing without the suit then he shouldn't have it. Learn how to use CSS fluently first! Frameworks will always be there.
+    Additionally, overriding the frameworks default stylings can be very difficult if you don't understand exactly how they work. Frameworks often help in the
+    short term and are an important part of a web developer's toolkit, but can be constraining in the long run if not used with proper technique and understanding.
+
+
+    CSS preprocessors(aka precompilers) are extensions to vanilla CSS that provide some extra functionality like nesting, mix-ins, and variables. Nowadays, most of their useful features have been incorporated into vanilla CSS, but some remain in use.
+        most common preprocessors: SASS, LESS, and Stylus.
     
