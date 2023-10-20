@@ -263,4 +263,15 @@ example code:
     AFter the custom property is defined, it can be accessed using the var() function. The var() function takes two input variables, the variable you want to insert, and a fallback value.
     var(input, fallback);
 
+    Scope:  The scope of the custom property is determined by the selector. This scope includes the selector the custom property was declared for as well as any descendants of that selector.
+    *I THINK this means that the scope of the variable is treated the same as a function scope in javascript. Any descendants of the element that instantiated the variable can access it, but
+    other sibling elements cannot.
 
+    :root selector
+        Essentially a global variable declaration. The same as accessing the HTML element but with a higher specificity.
+            use case: adding dark or light themes
+    prefers-color-scheme media query can be used to get a user's theme preferences, defaulting your website to light or dark mode without the need for specification.
+
+
+Browser Compatibility:
+    
