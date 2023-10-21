@@ -1,0 +1,26 @@
+Forms: The main way you collect information from users. Forms are the gateway for users into your backend services.
+    Think amazon! Delivery forms, payment forms etc.
+
+
+The form element: a container element, wraps all of the inputs a user will interact with on a form.
+
+A form element takes two essential attributes, action and method.
+    action: takes a URL value t hat tells the form where it should send its data to be processed.
+        This will be revisted later in the curriculum on how to interact with this element from a backend perspective.
+    method: tells the browser which HTTP request method it should use to submit the form. The "GET" and "POST" request methods are the two most common.
+        GET: gets information from the server, like search results!
+        POST: Makes changes to the server, like when a user makes an account.
+
+form example code:
+    <form action="example.com/path" method="post">
+
+    </form>
+
+Form controls: These are the elements needed to make the form inputs that users will interact with, like buttons, checkboxes, and buttons.
+    input: The most versatile form control elemlent. Accepts a "type" attribute which tells the browser what type of data it should expect 
+        and how it shoudl render the input element.
+
+        example code:
+        <form action="example.com/path" method="post">
+         <input type="text">
+        </form>
