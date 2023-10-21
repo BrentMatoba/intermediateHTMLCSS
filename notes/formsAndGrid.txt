@@ -24,3 +24,43 @@ Form controls: These are the elements needed to make the form inputs that users 
         <form action="example.com/path" method="post">
          <input type="text">
         </form>
+
+    text inputs accept any text input(strings)
+
+
+    Labels: Allows the developer to tell the user what kind of data they are supposed to be inputting.
+        example code:
+        <form action="example.com/path" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name">
+        </form>
+
+    Placeholder attribute: Gives user example of an input to guide them in formatting their answers.
+
+    name attribute: Just like labels, but instead informs the backend what the data is for. 
+        IF THIS IS NOT INCLUDED THE BACK END WILL IGNORE THIS INFORMATION
+            note* You can use this element even if you're not sending it to a backend, can just use it for collecting information showed somewhere else on the page.
+
+    type attribute:
+    Email inputs are specialized text inputs just for email addresses.
+    example code:
+        <label for="user_email">Email Address:</label>
+        <input type="email" id="user_email" name="email" placeholder="you@example.com">
+
+    Password inputs:
+        Generated using an input element with a type of "password".
+    
+    number input: only accepts numbesr and ignores other characters.
+    date input: renders a simple calendar for user to choose dates (cool)
+    text-area: not technically an input element, but creates a large resizeable textbot that accepts user input   
+        use cases: user comments and reviews.
+    
+
+    Selection elements: Allows users to select a value fomr a predefined list.
+        Select Dropdown: Renders a dropdown list where users can select an option. 
+            All options on the dropdown NEED a value attribute, this value will be sent to the server when the form is submitted.
+            can use <optgroup> to create a label that is applied for the entire group.
+
+
+    Radio Buttons: Used to allow users to choose from multiple options when there aren't enough options to make a dropdown list necessary.
+    
