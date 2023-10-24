@@ -63,4 +63,38 @@ Form controls: These are the elements needed to make the form inputs that users 
 
 
     Radio Buttons: Used to allow users to choose from multiple options when there aren't enough options to make a dropdown list necessary.
+        All options on the radio buttons must have the same name attribute
+        can set a default radio button by adding the checked attribute.
+
+    Checkboxes: The exact same as radio buttons except they allow users to select multiple options simultaneously
+
+
+Buttons
+    clickable elements that users can interact with (they're buttons man)
+    <button>Click me!<button>
+
+    submit buttons. <button type ="submit">Submit</button>
+        submits forms
+    
+    reset button
+        clears all data from users, returns form to initial value (usually clear)
+    
+    generic button.
+        the regular generic button I've been using so far, can be bound to any javascript method.
+
+
+
+Form elements:
+    Ways to organize forms os that user's don't get confused or discouraged.
+
+    Fieldset element.
+        container element that allows us to group related form inputs into one logical unit.
+            e.g. "personal information" section at top of form.
+
+    Legend
+        Give field sets a heading or caption.
+    
+
+
+
     
