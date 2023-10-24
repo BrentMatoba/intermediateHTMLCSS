@@ -93,8 +93,37 @@ Form elements:
 
     Legend
         Give field sets a heading or caption.
-    
 
+Form Validation: Validations allow us to set specific constraints or rules that determine what data users can enter into an input.
+    This protects backend systems from receiving incorrect data, and they help make the experience of interacting with our form as dead-stupid-simple as possible for users.
+
+    Required Validation:
+        by adding the "required" attribute, we make some data required before the form can be submitted.
+        The required fields should be obvious to users at a first glance, usually denoted with an asterik *
+
+    text length validations: Forces user to add minimum or maximum amount of text to a field, like the character limit on tweets, or length constraits on usernames.
+        minimum length validations:
+            Add the "minlength" attribute along with an integer value to represent the minimum amount of characters allowed.
+        Maximum length validation:
+            Add the "maxlength" attribute along with an integer value.
+        These validations are not mututally exclusive, and multiple can be applied for a single data entry.
+        
+    Number range validations:
+        Can control the range of values used   
+            use cases: limiting quantity on a product order form, or choosing the number of passengers on a flight booking form.
+    Pattern validations:
+           To ensure we get the correct information from users we will want to ensure data matches a particular pattern.
+                use cases: checking if the inputted data matches a credit card format, or a zipcode, address, etc
+            This uses regular expressions.
+            Its good practice to use a placeholder attribute to show users an example of the expected pattern they need to enter.
+            The pattern attribute can only be used on <input> elements. Some elements, such as email, will do this automatically without manulaly being set.
+    Styling validations:
+        We can target form controls that have passed or failed validations used the :valid and :invalid pseudo-classes.
+            Can be used to make a form turn red with invalid user input, etc.
+
+    Conclusion: Built in validations will take you far, and are quick and easy to use, but still have their limitations.
+        For instance, custom validations are required for passwords matching, or if a potential username has already been taken.
+        In addition, its CRUCIAL to note that client side validations are not guarantee of valid user input, and they should be paired with server side validations.
 
 
     
