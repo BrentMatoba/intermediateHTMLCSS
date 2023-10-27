@@ -1,0 +1,32 @@
+CSS GRID:
+By the end of this lesson you should be able to:
+    compare the basics between Flexbox and Grid.
+    Describe a situation for using grid over flexbox.
+    Introduced in 2017, grid allows users to place divs in a grid...lol
+    Great for easy placement of items in a two-dimensional layout.
+    Initially thought to replace flexbox, it instead is another tool in the toolbelt, and
+    can sometimes be used in tandem with flexbox for great results.
+    gap property is really useful
+
+
+
+Grid container:
+    Like flexbox, grid uses parent divs to act as containers, with the display:grid property.
+    .container{
+        display:grid;
+    }
+    The grid attribute cascades to the IMMEDIATE child elements.
+    grid attribute does not cascade down to grandchildren elements.
+
+<div class="container">
+  <div>Item 1</div>
+  <div>Item 2
+    <p>I am not a grid item!</p>
+  </div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+</div>
+
+*<p> does NOT get the grid property.
+
+
