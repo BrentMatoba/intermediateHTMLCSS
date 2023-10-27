@@ -29,4 +29,32 @@ Grid container:
 
 *<p> does NOT get the grid property.
 
+browser devtools can be used to find invisible grid items.
 
+grid track: space between lines on a grid.
+grid-template-columns:define columns
+grid-template-rows:define rows
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 50px 50px;
+}
+*Defines two columns, two rows
+
+
+.container {
+  display: grid;
+  grid-template: 50px 50px / 50px 50px 50px;
+}
+*more efficient shorthand
+
+
+explict vs implicit grid:
+If we add elements that are not explicitly defined in the grid we setup, CSS will
+autogenerate a grid row to place the items in, called an implicit grid. This
+grid does NOT follow the rules and properties defined for the explicit grid, and
+must be separatelly manipualated.
+
+Gap: space between each div for rows and columns, often called the "gutter" or the "alley" (really?)
+can be manipulated with column-gap and row-gap, or just gap
