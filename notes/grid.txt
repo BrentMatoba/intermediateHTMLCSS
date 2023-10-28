@@ -58,3 +58,15 @@ must be separatelly manipualated.
 
 Gap: space between each div for rows and columns, often called the "gutter" or the "alley" (really?)
 can be manipulated with column-gap and row-gap, or just gap
+
+Reviewing tracks: 
+grid-template: used to define the grid tracks.
+grid tracks: any single row or column on a grid.
+.first/last row or .last-column are useful class selectors
+
+lines
+grid lines are created implicity. Grid lines are only created after our grid tracks have been defined.
+we cannot explicitly create grid lines.
+Every track has a start line and an end line. The lines are numbered from left to right and top to bottom starting at 1.
+Grid lines are what we use to position grid items. 
+ß
