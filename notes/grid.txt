@@ -69,4 +69,36 @@ grid lines are created implicity. Grid lines are only created after our grid tra
 we cannot explicitly create grid lines.
 Every track has a start line and an end line. The lines are numbered from left to right and top to bottom starting at 1.
 Grid lines are what we use to position grid items. 
-ß
+
+
+Cells:
+The space in a grid shaerd by a single row track and a single column track is called a grid cell.
+Think of it like a cell in a spreadsheet
+
+Positioning:
+grid-column-start and rid-column-end with a slash between the two values. I believe this alters the size
+of a cell to the integers specified.
+grid-row does the same but vertically
+
+grid-area 
+  positioning shorthand:
+  grid-row-start/grid-column-start/grid-row-end/grid-column-end can all be combined into 
+  one line using grid-area.
+  we can give each cell a grid area attribute with a name, then use those names while arranging the actual grid-template
+
+  .container {
+  display: inline-grid;
+  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  background-color: lightblue; 
+  grid-template-areas:
+    "living-room living-room living-room living-room living-room"
+    "living-room living-room living-room living-room living-room"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "closet closet bathroom kitchen kitchen"    
+}
+
+very strange.
+
+"." is used to indicate empty Cells
+
