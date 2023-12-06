@@ -1,0 +1,57 @@
+Introduction:
+In this lesson we will examine the different parts of a grid and explore common properties that can be used to position grid items.
+
+Learning goals:
+1. Describe the difference between tracks, lines, and cells
+2. Position items by defining their start and end lines
+3. Use shorthand notaiton
+
+Reviewing tracks: grid-template is used to define the grid itself, the lines are called grid lines, the cells are called grid tracks.
+
+Lines:
+Grid lines are made implicitly (automatically) whenever grid tracks are created. We cannot explicitly create grid lines.
+
+Every grid track has a start line and an end line. The lines are numbered from left to right and top to bottom starting at 1.
+a 3x3 grid has lines 1-4 horizontally and lines 1-4 vertically
+
+grid LINES are what we u sed to position grid items
+There are negative and positive line spaces, don't have to know too much about them yet but should know that they exist
+
+
+Cells:
+Its exactly what you think it is, works just like excel, space in the grid defined by a row, column coordinate
+
+By default, each child element of a grid container will occupy one cell. In the example above, we have 9 cells in our grid (3rows x 3 columns)
+each with one automatically positioned child element inside. The element marked with the letter "A" is occupying a cell that lies in row track 1
+and column track 1. The item marked with the letter "H" is in a cell at row track 3 adn column track 2.
+But what happens if we want to the change the order of our grid items? or if we want items to occupy more than one cell?
+
+
+Positioning:
+grid-column is a combination of grid-colum-start and grid-column-end with a slash between the values.
+grid-column:4/6;
+grid-row:3/6;
+
+An even SHORTER shorthand is grid-area
+grid-area is a combination of grid-row-start, grid-column-start/ grid-row-end/grid-column-end
+
+
+You can give each room a name like this
+#living-room{
+    grid-area: living-room;
+}
+
+and then map out the rooms like this. This seems really dumb and ineffecient imo but its a thing
+.container {
+  display: inline-grid;
+  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  background-color: lightblue; 
+  grid-template-areas:
+    "living-room living-room living-room living-room living-room"
+    "living-room living-room living-room living-room living-room"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "bedroom bedroom bathroom kitchen kitchen"
+    "closet closet bathroom kitchen kitchen"    
+}
+
+. == empty cell
