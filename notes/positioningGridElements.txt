@@ -55,3 +55,11 @@ and then map out the rooms like this. This seems really dumb and ineffecient imo
 }
 
 . == empty cell
+Note: Empty cells means you can have white space without pushing around elements with margins
+- can be used to access cells from the end, exactly like an array
+
+Gutters and Alleys:
+The column-gap and row-gap properties can be used to specify a gap
+
+span keyword can be used to specify how many rows/columns you would like the item to make up
+
