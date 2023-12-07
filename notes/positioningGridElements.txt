@@ -63,3 +63,13 @@ The column-gap and row-gap properties can be used to specify a gap
 
 span keyword can be used to specify how many rows/columns you would like the item to make up
 
+
+Properties of the grid container:
+display:
+grid: generates a block level grid
+ inline-grid: generates an inline-level grid
+
+ Properties for the children:
+ justify-self: align sa grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns alon gthe block (column) axis). 
+ justify-self: start | end | center | stretch;
+ 
