@@ -72,4 +72,17 @@ grid: generates a block level grid
  Properties for the children:
  justify-self: align sa grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns alon gthe block (column) axis). 
  justify-self: start | end | center | stretch;
- 
+
+ align-self: aligns a grid item inside a cell along the block(column axis) as opposed to justify-self which aligns along the inline row axis this value applies to the content inside a single grid item.
+ .item{
+  align-self: start | end | center | stretch;
+ }
+
+ place-self sets both the align-self and justify-self properties in a single declaration
+ values:
+  auto: The "default" alignment for the layout mode.
+  <align-self>/<justify-self>: the first value sets align-self, the second value sets justify-self. if the second
+  value is ommitted, the first value is assigned to both properties.
+  .item-a{
+    place-self: center
+  }
