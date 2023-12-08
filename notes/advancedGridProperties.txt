@@ -9,3 +9,14 @@ Learning outcomes
     use auto-fit/auto-fill along with minmax() to create responsive grids.
 
 Setup
+display grid: used to turn a container into a grid
+"resize: both" is a css property that allows the user to resize the container by clicking and dragging
+from the bottom right corner. This will be beneficial to use when we start using properties that resize our grid
+tracks based on the size of the grid.
+
+Overflow: auto to enable scrolling if we resize the container to be smaller than our grid can accomodate.
+
+gap/padding establish a "gutter" area to be able to visualize the grid items better.
+
+
+Repeat:
