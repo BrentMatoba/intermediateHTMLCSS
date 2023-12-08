@@ -1,0 +1,11 @@
+What do when you want the grid to be dynamic, responsive, and reuseable,
+as opposed to static?
+
+Learning outcomes
+    Create multiple grid tracks more easily using the repeat function:
+    Create grid tracks using fr units instead of an explicit size
+    Set min, max, and ideal track size boundaries.
+    use auto-fit and auto-fill to create a grid with a dynamic numbers of rows or columns
+    use auto-fit/auto-fill along with minmax() to create responsive grids.
+
+Setup
