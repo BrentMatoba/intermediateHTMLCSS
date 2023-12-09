@@ -86,3 +86,27 @@ grid: generates a block level grid
   .item-a{
     place-self: center
   }
+
+
+  repeat() is a CSS function available to the CSS grid template properties that allows us to define a number
+  of rows or columns and the size we want them to be without having to manually type each individual track's size. For example, in our setup
+  above:
+
+  .grid-container{
+    grid-template-rows: 150px; 150px;
+    grid-template-columns: 150px 150px 150px 150px 150px
+  }
+
+  can instead be rewritten as
+  .grid-container{
+    grid-template-rowss: repeat(2, 150px);
+    grid-template-columns: repeat(5, 150px);
+  }
+
+
+  Fractional units(fr)
+  Dynamic units, meaning they're responsive.
+  Using fractional units is the most basic way to make a grid responsive.
+  Fractional units distribute whatever REMAINING space is left. For example, if we have a four-column grid with a total width of 400 px and four
+  grid items each on a column track assigned 1fr as their size, all of the grid items should be given ONE FRACTION of that 400 px of space, which is 100 px.
+  
