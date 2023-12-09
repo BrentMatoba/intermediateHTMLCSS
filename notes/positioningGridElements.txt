@@ -152,3 +152,21 @@ but lets do a quick review. the syntax is as follows:
 
 clamp(minmum-size, ideal-size, maximum-size)
 Allows element to resize itself until it reaches one of the minimum or maximum threshold values.
+
+clamp() and minmax() are great go to tools for making grids responsive.
+
+
+
+auto-fit and auto-fill:
+actually part of the repeat() function specification.
+Use case: You want to give your grid a number of columsn that is flexible based on the size of the grid.
+For example, if our grid area is 200px wide, we only want one column, if there's 400 px, then we want two columns.
+
+If we have a set width of 1000 px and we are telling it to fill in our columns with tracks of 200 px each.
+As llong as there are at least five grid items, this will result in a 5-column layout no matter what. In this
+case, auto-fill would actually do the same thing. We will get into the difference soon.
+
+The real magic of auto-fit and auto-fill comes when we incorporate minmax()
+with minmax(), we can tell our grid that we want to have as many columns as possible, using the constraints
+of our mimax() function to determine each column's size, without it overflowing our grid.
+
