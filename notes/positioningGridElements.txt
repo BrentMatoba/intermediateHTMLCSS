@@ -139,3 +139,16 @@ grid-template-columns
 grid-template-rows
 grid-auto-columns
 grid-auto-rows
+
+Its a relatively straightforward function that only takes in two argumetns:
+1: The minimum size the grid track can be
+2: The maximum size the grid track can be.
+Unlike min() and max(), it makes sense to use static values for both arguments.
+
+clamp():
+Unlike minmax(), clam() is a CSS funciton that can be used anywhere, not just within
+a grid container. As with min() and max(), we learned about it in a previous lesson,
+but lets do a quick review. the syntax is as follows:
+
+clamp(minmum-size, ideal-size, maximum-size)
+Allows element to resize itself until it reaches one of the minimum or maximum threshold values.
