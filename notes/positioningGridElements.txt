@@ -109,4 +109,28 @@ grid: generates a block level grid
   Using fractional units is the most basic way to make a grid responsive.
   Fractional units distribute whatever REMAINING space is left. For example, if we have a four-column grid with a total width of 400 px and four
   grid items each on a column track assigned 1fr as their size, all of the grid items should be given ONE FRACTION of that 400 px of space, which is 100 px.
-  
+
+  fr units can be used to disproportionately give some units space.
+
+  Fr units can be mixed with static units, like if you want one div to specifically remain at 125 px wide,
+  but fractionally distribute everything else.
+
+  be aware of the MINCONTENT keyword in CSS, its not covered in this lesson, but is VERY useful for handling how small elements can go
+  as the window shrinks.
+
+
+
+
+  Minimum and maximum track sizees: min() and max()
+  both min() and max() will return a value based on the argumetns you supply them. min() will return the smallest of all values passed,
+  and max() will return the largest.
+
+  Obviously its troll to feed these arguments static values, since the result will always be the same. These functions become powerful only
+  once you start using dynamic values (FOR INSTANCE FRACTIONAL UNITS)
+  .grid-container{
+    grid-template-rows: repeat(2, min(200px, 50%));
+    grid-template-columns: repeat(5, max(120px, 15%));
+    //essentially setting a max height for the track.
+  }
+
+  minmax():
