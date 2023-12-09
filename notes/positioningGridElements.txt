@@ -133,4 +133,9 @@ grid: generates a block level grid
     //essentially setting a max height for the track.
   }
 
-  minmax():
+minmax():
+is a CSS function specifically used with Grid. It can only be used with the following CSS properties:
+grid-template-columns
+grid-template-rows
+grid-auto-columns
+grid-auto-rows
