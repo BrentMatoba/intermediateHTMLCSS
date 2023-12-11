@@ -1,0 +1,15 @@
+Introduction:
+Grid and flexbox are complementary, don't think of it as one or the other, but rather as two tools that can be used in concert.
+
+Learning outcomes:
+1. Know when you might want to use flexbox over Grid
+2. Know when you might want to use grid over flexbox.
+3. Know when you might want to use the two together.
+
+content first vs layout first design.
+A way to decide between grid and flexbox is to consider if your design starts from the content, or from the layout.
+
+In content first design, you begin with clarity of how the content should be, and the layout follows. This is ag reat opportunity to use flexbox. Its flexible nature 
+gives you control of behavior of items through logical rules. How they grow, shrink, their ideal size and position in relation to ehac other, all make the layout
+dynamic. While flexbox gives you control over its element, the final layout is only a consequence. Depending on the dimensions of the flex container, its general
+layout can change a lot.
