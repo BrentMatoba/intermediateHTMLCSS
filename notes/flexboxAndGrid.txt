@@ -13,3 +13,8 @@ In content first design, you begin with clarity of how the content should be, an
 gives you control of behavior of items through logical rules. How they grow, shrink, their ideal size and position in relation to ehac other, all make the layout
 dynamic. While flexbox gives you control over its element, the final layout is only a consequence. Depending on the dimensions of the flex container, its general
 layout can change a lot.
+
+In layout first design, you decide how you want the pieces to be arranged, then fill in the content. That is when grid shines. Defining grid row and colum tracks gives
+you full control of layout. Content in a grid can only fill the spaces of the explicit or implicit tracks. So, when you have an idea of how the big picture of a container
+should look like, grid is the clear choice.
+
