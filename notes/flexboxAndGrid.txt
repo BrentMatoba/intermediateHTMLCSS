@@ -30,3 +30,23 @@ Closing Opinion: This lesson includes reccomendations, not the "right" or "wrong
 and wht a developer feels is easier for whatever the given task might be. At this point you have both of these tools in your toolbox and got a sneak peek At
 how they can be used together or one in place of the other.
 
+
+
+When to use flexbox vs grid:
+In general, grid can do EVERYTHING flexbox can.
+FOR NOW browser support is better for flexbox than grid, but this is expected to change in the near future.
+Flexbox is easier to animate changes with
+
+Grids pros:
+much more consistent across browsers, less bugs than flexbox.
+If designing something with a single axis, its much easier to pivot if you decide to change to a multi row design.
+
+Axis flipping:
+    flexbox lets you flip content very easily.
+
+grid-auto-flow is like flex-direction change
+
+
+justify-items is justify content but for grid THAT WOULD HAVE BEEN NICE TO Know
+justify-self is also a thing, I think items if applied to parent, self if applied to child
+align items works with grid as well
