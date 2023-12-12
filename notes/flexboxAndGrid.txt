@@ -17,4 +17,16 @@ layout can change a lot.
 In layout first design, you decide how you want the pieces to be arranged, then fill in the content. That is when grid shines. Defining grid row and colum tracks gives
 you full control of layout. Content in a grid can only fill the spaces of the explicit or implicit tracks. So, when you have an idea of how the big picture of a container
 should look like, grid is the clear choice.
+*note these are guidelines, and a content/layout first design does not force you to use either technique
+
+Combining flexbox and grid:
+If you have one-dimensional content, flexbox can make it easier to control how that content is positioned in a flex container. If, on the other hand, you want to
+accurately place content on a complex layout in two dimensions, grid can be simpler to use.
+
+Say you want your overall layout to be a grid, but then you want the grid items to act as flex parents. This way, the grid items can be moed around using the precise
+two-dimensional placement grid allows for, while also allowing the content inside the grid items to be capable of freely moving around using flex.
+
+Closing Opinion: This lesson includes reccomendations, not the "right" or "wrong" way of using flexbox or grid. ultimately, it comes down to personal preference
+and wht a developer feels is easier for whatever the given task might be. At this point you have both of these tools in your toolbox and got a sneak peek At
+how they can be used together or one in place of the other.
 
